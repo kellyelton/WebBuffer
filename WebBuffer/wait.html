@@ -1,0 +1,29 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Test</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+	    <script type="text/javascript">
+	        function isNumber(n) {
+	            return !isNaN(parseFloat(n)) && isFinite(n);
+	        }
+	        function DoCheck() {
+	            $('#place').html("Checking...");
+	            $.post('place?%%id%%', result);
+	        }
+	        function result(data) {
+	            if (isNumber(data)) {
+	                $('#place').html(data);
+	                setTimeout(DoCheck, 1000);
+	            }
+	            else
+	                window.location.href = data;
+	        }
+	        $(window).load(DoCheck);
+        </script>
+        <h2>You are currently in que to visit the site.</h2>
+        <h3>Your place is <a id="place">0</a></h3>
+	</body>
+</html>

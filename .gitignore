@@ -1,0 +1,29 @@
+# Build outputs
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+*.docstates.suo
+*.sln.docstates.suo
+
+# ReSharper
+_ReSharper*/
+
+# NuGet
+packages/
+*.nupkg
+
+# Test results
+TestResults/
+
+# NCrunch
+*.ncrunchsolution
+*.ncrunchsolution.user
+*.ncrunchproject
+
+# SVN
+.svn/
