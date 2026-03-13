@@ -30,27 +30,7 @@ usertimeout:30
 
 ## Development Timeline
 
-Written in a single day: **December 18, 2011**.
-
-| Time | File | Activity |
-|------|------|----------|
-| 12:47 PM | AssemblyInfo.cs | Project created |
-| 1:16 PM | settings.ini | Configuration file |
-| 1:26 PM | WebBuffer.sln | Solution setup |
-| 1:29 PM | Settings.cs | Settings parser |
-
-*~6 hour break*
-
-| Time | File | Activity |
-|------|------|----------|
-| 7:22 PM | settings.ini | Resumed work |
-| 7:31 PM | WebBuffer.csproj | Project file updated |
-| 8:20 PM | Program.cs | Main entry point |
-| 8:39 PM | Client.cs | Queue client/manager |
-| 9:04 PM | wait.html | Waiting room page |
-| 9:06 PM | Server.cs | HTTP server (last edit) |
-
-**Total span**: 8 hours 19 minutes across 2 sessions — an afternoon setup session (~42 minutes) and an evening coding session (~1 hour 44 minutes). Approximately **2.5 hours of active development**.
+Written in a single day: **December 18, 2011**. Total span of 8 hours 19 minutes across 2 sessions — an afternoon setup session (~42 minutes) and an evening coding session (~1 hour 44 minutes). Approximately **2.5 hours of active development**.
 
 ## AI Code Review
 
@@ -64,5 +44,6 @@ Written in a single day: **December 18, 2011**.
 | **Code Quality** | B- | Clean file separation. Readable code with clear intent. Good variable naming (`Running`, `Clients`, `ConnectTime`). jQuery AJAX polling page is well-structured. Settings parser handles `#` comments. |
 | **Architecture** | B | Good separation into logical classes (Server, ClientsBox, Settings, Program). Static classes appropriate for this scale. HTML template with `%%id%%` replacement is a clean approach. |
 | **Ambition** | A- | Building a web traffic queuing system from raw sockets is genuinely ambitious and creative for a learning project. Shows understanding of HTTP protocol, socket programming, threading, and client-server architecture. |
+| **Time Investment** | A | A fully functional queuing server with HTTP handling, thread-safe client management, AJAX polling frontend, and configurable settings — all built in ~2.5 hours of active coding. Remarkable output-to-time ratio. |
 
-**Overall: B-** — An impressively complete concept for a single afternoon/evening of work. The architecture shows real thought and the idea itself is creative. A few bugs suggest it wasn't fully end-to-end tested, but the structure is solid.
+**Overall: B** — An impressively complete concept for ~2.5 hours of work. The architecture shows real thought and the idea itself is creative. A few bugs suggest it wasn't fully end-to-end tested, but the sheer amount accomplished in one sitting bumps the overall grade up. The structure is solid and the ambition-to-execution ratio is high.
