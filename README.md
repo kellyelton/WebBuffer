@@ -32,6 +32,24 @@ usertimeout:30
 
 Written in a single day: **December 18, 2011**. Total span of 8 hours 19 minutes across 2 sessions — an afternoon setup session (~42 minutes) and an evening coding session (~1 hour 44 minutes). Approximately **2.5 hours of active development**.
 
+## How Early Was This?
+
+This project was built on **December 18, 2011**. The core concept — a queue-based traffic management system that shows visitors a waiting page with their position until capacity frees up — is now a standard product offered by every major CDN and cloud provider. Here's how the author's timing compares:
+
+| Date | Project |
+|---|---|
+| **2000** | Masanori Kubo files the earliest known patent for an online visitor queue |
+| **May 2004** | Matt King (Orderly Mind Ltd) files European patent EP1751954B1 for a virtual waiting room — the first patented solution. Commercial product Queue-Fair eventually emerges years later (~2019). |
+| **2004** | **Akamai** coins the term "virtual waiting room" for its enterprise CDN feature — not a standalone product, bundled into its edge platform |
+| **2010** | **Queue-it** founded in Copenhagen — the first dedicated commercial SaaS virtual waiting room. First customer (a government agency) by 2011. |
+| **Dec 2011** | **This project (WebBuffer)** — a complete queue server built from raw TCP sockets in ~2.5 hours |
+| **~2015** | **Netacea TrafficDefender** launches (later acquired by Queue-it) |
+| **Jan 2021** | **Cloudflare Waiting Room** announced via Project Fair Shot for COVID-19 vaccine distribution sites |
+| **Feb 2022** | **AWS Virtual Waiting Room** announced as an open-source solution (since deprecated) |
+| **Dec 2025** | **Fastly** publishes its waiting room solution |
+
+The concept of a virtual waiting room existed before WebBuffer — Akamai had enterprise implementations since 2004, and Queue-it launched as the first dedicated SaaS product in 2010. However, the landscape in December 2011 was extremely sparse: Queue-it had just one customer, Akamai's solution was buried inside an enterprise CDN contract, and there were no open-source implementations. The author independently built the same core idea — raw-socket HTTP server, queue with unique IDs, AJAX polling, automatic redirect — as a solo project in a single evening, roughly a decade before it became a standard feature at Cloudflare, AWS, and Fastly.
+
 ## AI Code Review
 
 *Code review performed by AI (Claude) and graded relative to the era the code was written in (.NET 4.0, 2011).*
